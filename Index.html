@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Biometric Spoof Detection</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(45deg, #1e3a8a, #9333ea);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+section {
+    padding: 40px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    background: #9333ea;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>AI-Based Biometric Spoof Detection</h1>
+    <p>Detect Fake vs Real Biometrics using AI</p>
+</header>
+
+<section>
+    <h2>🔍 Problem</h2>
+    <div class="card">
+        Biometric systems can be fooled using fake fingerprints, photos, or masks.
+    </div>
+</section>
+
+<section>
+    <h2>💡 Solution</h2>
+    <div class="card">
+        Our AI system detects spoof attacks using liveness detection and pattern analysis.
+    </div>
+</section>
+
+<section>
+    <h2>⚙️ How It Works</h2>
+    <div class="card">
+        1. Capture biometric input<br>
+        2. AI analyzes texture & patterns<br>
+        3. Detects real vs fake<br>
+        4. Gives instant result
+    </div>
+</section>
+
+<section>
+    <h2>🎥 Demo</h2>
+    <div class="card">
+        <p>Click below to simulate detection:</p>
+        <button class="button" onclick="detect()">Run Demo</button>
+        <p id="result"></p>
+    </div>
+</section>
+
+<footer>
+    <p>Hackathon Project by Team 🚀</p>
+</footer>
+
+<script>
+function detect() {
+    let result = Math.random() > 0.5 ? "✅ Real User" : "⚠️ Spoof Detected";
+    document.getElementById("result").innerText = result;
+}
+</script>
+
+</body>
+</html>
